@@ -1,0 +1,805 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #6C70DC;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#staff {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#staff .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#staff .container .stage {
+  width: 20%;
+  height: 80vh;
+  background-color: #292D32;
+  position: relative;
+}
+#staff .container .stage ul {
+  margin: 20px 40px;
+}
+#staff .container .stage ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#staff .container .stage ul li p {
+  margin-left: 20px;
+  color: #4D545A;
+}
+#staff .container .stage ul li span {
+  color: #fff;
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  background-color: #4D545A;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#staff .container .stage ul .active p {
+  color: #53d56c;
+}
+#staff .container .stage ul .active span {
+  background-color: #53d56c;
+}
+#staff .container .stage .stage-bottom {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid #ECEFF2;
+}
+#staff .container .select {
+  width: 80%;
+  height: 80vh;
+  background-color: #F5F7FA;
+  position: relative;
+}
+#staff .container .select .select-top {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 2px solid #ECEFF2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+}
+#staff .container .select .select-top i {
+  cursor: pointer;
+}
+#staff .container .select .select-top h2 {
+  color: #292D32;
+  font-size: 18px;
+  font-weight: 600;
+}
+#staff .container .select .select-person {
+  width: 90%;
+  height: 15vh;
+  background-color: #fff;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+}
+#staff .container .select .select-person .select-image {
+  width: 50px;
+  height: 50px;
+}
+#staff .container .select .select-person .select-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#staff .container .select .select-person .select-description {
+  margin-left: 30px;
+}
+#staff .container .select .select-person .select-description h4 {
+  font-size: 14px;
+  color: #292D32;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#staff .container .select .select-person .select-description p {
+  font-size: 12px;
+  color: #4D545A;
+}
+#staff .container .select .select-bottom {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid #ECEFF2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+}
+#staff .container .select .select-bottom a {
+  width: 80px;
+  height: 40px;
+  background-color: #6C70DC;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#staff .container .select .select-bottom .select-error {
+  display: none;
+}
+#staff .container .select .select-bottom .select-error a {
+  width: 170px;
+  background-color: #F4BE6C;
+}
+#staff .container .select .select-bottom .select-error i {
+  font-size: 14px;
+  margin-right: 20px;
+}
+#staff .container .select .selected {
+  border: 2px solid #53d56c;
+}
+
+body {
+  background-color: #6C70DC;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#staff {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#staff .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#staff .container .stage {
+  width: 20%;
+  height: 80vh;
+  background-color: #292D32;
+  position: relative;
+}
+#staff .container .stage ul {
+  margin: 20px 40px;
+}
+#staff .container .stage ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#staff .container .stage ul li p {
+  margin-left: 20px;
+  color: #4D545A;
+}
+#staff .container .stage ul li span {
+  color: #fff;
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  background-color: #4D545A;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#staff .container .stage ul .active p {
+  color: #53d56c;
+}
+#staff .container .stage ul .active span {
+  background-color: #53d56c;
+}
+#staff .container .stage .stage-bottom {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid #fff;
+}
+#staff .container .select2 {
+  width: 80%;
+  height: 80vh;
+  background-color: #F5F7FA;
+  position: relative;
+}
+#staff .container .select2 .service-top {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 2px solid #ECEFF2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+}
+#staff .container .select2 .service-top i {
+  cursor: pointer;
+}
+#staff .container .select2 .service-top h2 {
+  color: #292D32;
+  font-size: 18px;
+  font-weight: 600;
+}
+#staff .container .select2 .service-person {
+  width: 90%;
+  height: 15vh;
+  background-color: #fff;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+#staff .container .select2 .service-person .service-image {
+  width: 50px;
+  height: 50px;
+}
+#staff .container .select2 .service-person .service-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#staff .container .select2 .service-person .service-description {
+  margin-left: 30px;
+}
+#staff .container .select2 .service-person .service-description h4 {
+  font-size: 14px;
+  color: #292D32;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#staff .container .select2 .service-person .service-description p {
+  font-size: 12px;
+  color: #4D545A;
+}
+#staff .container .select2 .service-person .service-price {
+  color: #53d56c;
+  font-size: 26px;
+  position: absolute;
+  right: 5%;
+}
+#staff .container .select2 .service-bottom {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+}
+#staff .container .select2 .service-bottom a {
+  width: 80px;
+  height: 40px;
+  background-color: #6C70DC;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#staff .container .select2 .service-bottom .service-error {
+  display: none;
+}
+#staff .container .select2 .service-bottom .service-error a {
+  width: 170px;
+  background-color: #F4BE6C;
+}
+#staff .container .select2 .service-bottom .service-error i {
+  font-size: 14px;
+  margin-right: 20px;
+}
+#staff .container .select2 .service-bottom .select-back a {
+  color: #8F9CA7;
+  background-color: #F7F8FB;
+  border: 1px solid #ECEFF2;
+}
+#staff .container .select2 .selected {
+  border: 2px solid #53d56c;
+}
+
+.dark {
+  --bg-body: $dark-body;
+  --bg-main: $dark-main;
+  --bg-second: $dark-second;
+  --color-hover: $dark-hover;
+  --color-txt: $dark-text;
+}
+
+.light {
+  --bg-body: $light-body;
+  --bg-main: $light-main;
+  --bg-second: $light-second;
+  --color-hover: $light-hover;
+  --color-txt: $light-text;
+}
+
+.calendar-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  margin-top: 50px;
+}
+.calendar-flex .calendar-month {
+  width: 60%;
+  height: 50vh;
+  background-color: #fff;
+}
+.calendar-flex .calendar-time {
+  width: 40%;
+  height: 50vh;
+  background-color: #fff;
+  margin-left: 20px;
+}
+.calendar-flex .calendar-time h2 {
+  margin-top: -70px;
+}
+.calendar-flex .calendar-time .calendar-body-text {
+  height: 35px;
+  border-bottom: 2px solid #ECEFF2;
+}
+.calendar-flex .calendar-time .calendar-body-text p {
+  color: #6C70DC;
+  text-align: center;
+  font-size: 14px;
+}
+.calendar-flex .calendar-time .calendar-body-text .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.calendar-flex .calendar-time .calendar-body-text .boxes .calendar-box {
+  width: 30%;
+  height: 55px;
+  background-color: #ECEFF2;
+  margin: 0 10px;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.calendar-flex .calendar-time .calendar-body-text .boxes .calendar-box p {
+  margin-bottom: 5px;
+  color: #111111;
+}
+.calendar-flex .calendar {
+  width: 100%;
+  height: 400px;
+  background-color: var(--bg-main);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-top: -55px;
+  /* transform: scale(1.25); */
+}
+.calendar-flex .light .calendar {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.calendar-flex .calendar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-txt);
+  padding: 10px;
+}
+.calendar-flex .calendar-week-day {
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+  border-bottom: 2px solid #ECEFF2;
+}
+.calendar-flex .calendar-week-day div {
+  display: grid;
+  place-items: center;
+  color: #C8C9CC;
+}
+.calendar-flex .calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  color: var(--color-txt);
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.calendar-flex .calendar-days div {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  -webkit-animation: to-top 1s forwards;
+          animation: to-top 1s forwards;
+  margin-bottom: 5px;
+  background-color: #ECEFF2;
+  color: #C8C9CC;
+  /* border-radius: 50%; */
+}
+.calendar-flex .calendar-days div span {
+  position: absolute;
+}
+.calendar-flex .calendar-days div:hover span {
+  -webkit-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.calendar-flex .calendar-days div span:nth-child(1),
+.calendar-flex .calendar-days div span:nth-child(3) {
+  width: 2px;
+  height: 0;
+  background-color: var(--color-txt);
+}
+.calendar-flex .calendar-days div:hover span:nth-child(1),
+.calendar-flex .calendar-days div:hover span:nth-child(3) {
+  height: 100%;
+}
+.calendar-flex .calendar-days div span:nth-child(1) {
+  bottom: 0;
+  left: 0;
+}
+.calendar-flex .calendar-days div span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+.calendar-flex .calendar-days div span:nth-child(2),
+.calendar-flex .calendar-days div span:nth-child(4) {
+  width: 0;
+  height: 2px;
+  background-color: var(--color-txt);
+}
+.calendar-flex .calendar-days div:hover span:nth-child(2),
+.calendar-flex .calendar-days div:hover span:nth-child(4) {
+  width: 100%;
+}
+.calendar-flex .calendar-days div span:nth-child(2) {
+  top: 0;
+  left: 0;
+}
+.calendar-flex .calendar-days div span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+.calendar-flex .calendar-days div:hover span:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.calendar-flex .calendar-days div:hover span:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.calendar-flex .calendar-days div:hover span:nth-child(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.calendar-flex .calendar-days div.curr-date,
+.calendar-flex .calendar-days div.curr-date:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 50%;
+}
+.calendar-flex .calendar-days div.curr-date span {
+  display: none;
+}
+.calendar-flex .month-picker {
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.calendar-flex .month-picker:hover {
+  background-color: var(--color-hover);
+}
+.calendar-flex .year-picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calendar-flex .year-change {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.calendar-flex .year-change:hover {
+  background-color: var(--color-hover);
+}
+.calendar-flex .month-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-main);
+  padding: 20px;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  display: grid;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  visibility: hidden;
+  pointer-events: none;
+}
+.calendar-flex .month-list.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+  pointer-events: visible;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.calendar-flex .month-list > div {
+  display: grid;
+  place-items: center;
+}
+.calendar-flex .month-list > div > div {
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-txt);
+}
+.calendar-flex .month-list > div > div:hover {
+  background-color: var(--color-hover);
+}
+@-webkit-keyframes to-top {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes to-top {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.calendar-flex .selectedBox {
+  background-color: #53d56c !important;
+}
+
+.calendar-day-hover.selectedDate {
+  background-color: lightblue; /* veya istediğiniz başka bir renk */
+  cursor: pointer;
+  border: 2px solid red; /* Belirli tarihlerde kenarlık ekle */
+}
+
+.highlighted-date {
+  border: 2px solid red;
+}
+
+.matched-day {
+  color: #111111 !important;
+}
+
+form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+
+.input {
+  margin: 0 20px 30px;
+  width: 40%;
+}
+
+form input, form textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 40px;
+}
+
+.textarea {
+  margin: 0 20px 30px;
+  width: 84%;
+  background-color: #fff;
+}
+
+.next-book a {
+  padding: 0 70px;
+}/*# sourceMappingURL=main.css.map */
