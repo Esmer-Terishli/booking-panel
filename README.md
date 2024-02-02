@@ -6,7 +6,7 @@
 <h1>Project Features</h1>
 <ul>
   <li>Responsive design</li>
-  <li>lean and organized codebase</li>
+  <li>Clean and organized codebase</li>
   <li>Modern user interface</li>
   <li>Easily customizable content</li>
 </ul>
